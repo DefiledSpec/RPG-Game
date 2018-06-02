@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            height: 100px;
+            width: 100px;
+            background: gray;
+            border: yellow 1px solid;
+        }
+        .npc {
+            float: left;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+        
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .hidden {
+            overflow: hidden;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <article class="clearfix">
+        <h2 id="pickChar">Pick a character!</h2>
+        <h2 id="pickEnemy" class="hidden">Choose an enemy</h2>
+        <div id="npc1" class="npc" data-npcId="0">1</div>
+        <div id="npc2" class="npc" data-npcId="1">2</div>
+        <div id="npc3" class="npc" data-npcId="2">3</div>
+        <div id="npc4" class="npc" data-npcId="3">4</div>
+    </article>
+    <article class="clearfix">
+        <h2>Your Character</h2>
+        
+
+    </article>
+    <article class="clearfix">
+        <h2>Current Enemy</h2>
+
+    </article>
+    <article class="clearfix">
+        <h2>Attack</h2>
+        <button id="attackBtn" class="hidden">Attack</button>
+
+
+    </article>
+    
+
+
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
